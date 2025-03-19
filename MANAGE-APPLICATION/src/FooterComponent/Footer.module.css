@@ -1,0 +1,211 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 26rem;
+}
+.FooterTop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10rem;
+  padding-left: 10rem;
+  width: 76rem;
+  height: 45%;
+  background-color: var(--Bright-Red);
+}
+.FooterTop h1 {
+  color: var(--Very-Light-Gray);
+  font-size: 2.5rem;
+  font-weight: 700;
+  width: 30rem;
+}
+/* From Uiverse.io by gharsh11032000 */
+.animatedButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 30px;
+  border: 4px solid;
+  border-color: white;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 110px;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0 0 0 2px var(--Bright-Red);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.animatedButton svg {
+  position: absolute;
+  width: 24px;
+  fill: white;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.animatedButton .arr1 {
+  right: 16px;
+}
+.animatedButton .arr2 {
+  left: -25%;
+}
+.animatedButton .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: var(--Dark-Blue);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.animatedButton .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.animatedButton:hover {
+  box-shadow: 0 0 0 12px transparent;
+  border-color: transparent;
+  color: white;
+  border-radius: 12px;
+}
+.animatedButton:hover .arr1 {
+  right: -25%;
+}
+.animatedButton:hover .arr2 {
+  left: 16px;
+}
+.animatedButton:hover .text {
+  transform: translateX(12px);
+}
+.animatedButton:hover svg {
+  fill: white;
+}
+.animatedButton:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px var(--Bright-Red);
+}
+.animatedButton:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+.FooterBottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 65%;
+  width: 76rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  background-color: var(--Very-Dark-Blue);
+}
+.logoSocialMedia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 50%;
+  width: 20%;
+}
+.logoSocialMedia div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
+.logoSocialMedia svg {
+  transition: 0.15;
+}
+.logoSocialMedia svg:hover {
+  fill: var(--Bright-Red);
+  cursor: pointer;
+}
+.logoSocialMedia svg:active {
+  transform: scale(0.9);
+}
+.sections {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  height: 50%;
+  margin: 0rem;
+}
+.sections li {
+  all: unset;
+}
+.sections a {
+  all: unset;
+  font-size: 0.9rem;
+  color: white;
+}
+.sections a:hover {
+  cursor: pointer;
+  color: var(--Bright-Red);
+}
+.sections p {
+  font-size: 0.8rem;
+  margin: 0rem;
+  color: var(--Dark-Grayish-Blue);
+}
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  height: 20%;
+}
+.emailInput {
+  width: 70%;
+  padding-left: 1rem;
+  height: 100%;
+  font-size: 0.9rem;
+  color: var(--Very-Dark-Blue);
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  transition: 0.15s;
+}
+.emailInput:hover {
+  cursor: pointer;
+}
+.emailInput::placeholder {
+  color: var(--Dark-Grayish-Blue);
+}
+.emailInput:focus {
+  caret-color: var(--Bright-Red);
+  width: 75%;
+}
+.goButton {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background-color: var(--Bright-Red);
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.9rem 1.5rem;
+  transition: 0.15s;
+  margin-top: 0rem;
+}
+.goButton:hover {
+  cursor: pointer;
+  background-color: var(--Very-Light-Gray);
+  color: var(--Very-Dark-Blue);
+}
+.goButton:active {
+  transform: scale(0.95);
+}

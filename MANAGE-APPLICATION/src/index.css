@@ -1,0 +1,31 @@
+:root {
+  --Bright-Red: hsl(12, 88%, 59%);
+  --Dark-Blue: hsl(228, 39%, 23%);
+  --Very-Dark-Blue: hsl(233, 12%, 13%);
+  --Very-Pale-Red: hsl(13, 100%, 96%);
+  --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --Red-Hover-Btn: rgba(255, 0, 0, 0.5);
+  --font-family: Be Vietnam Pro;
+}
+* {
+  user-select: none;
+  font-family: var(--font-family);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  height: 160rem;
+  width: 100%;
+  padding: 0rem;
+  margin: 0rem;
+}
+#root {
+  width: 100%;
+}

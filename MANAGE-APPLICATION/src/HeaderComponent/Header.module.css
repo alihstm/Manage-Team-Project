@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 10rem;
+  margin: 0rem;
+  margin-bottom: 5rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+.navBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 35rem;
+}
+.navBar li {
+  all: unset;
+  color: var(--Dark-Blue);
+  transition: 0.15s;
+}
+.navBar a {
+  all: unset;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.navBar li:hover {
+  cursor: pointer;
+  color: var(--Dark-Grayish-Blue);
+}
+.navBar li:active {
+  transform: scale(0.9);
+}
